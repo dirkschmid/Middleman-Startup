@@ -20,7 +20,7 @@ Custom settings added for this framework in `config.rb` are...
     set :use_typekit, true
     set :use_jquery, true
 
-...use Typekit and jQuery respectively. If you choose not to use jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors with minimum overhead.
+...to toggle use of Typekit and jQuery respectively. If you choose not to use jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors with minimum overhead.
 
 ======================================
 
