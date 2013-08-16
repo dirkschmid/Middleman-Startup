@@ -1,0 +1,39 @@
+table
+  width: 100%
+
+caption, th, td
+  text-align: left
+  
+td
+  vertical-align: top
+
+.copy
+  caption
+    padding-bottom: .5em
+    font-style: italic
+
+  th, td
+    padding: em($unit--half) 0
+
+  td
+    +set-border(top, 1px, #999)
+
+  .table--bordered,
+  .table--striped
+    th, td
+      padding: em($unit / 1.5) em($unit)
+
+  .table--bordered  
+    th, td
+      +set-border(all, 1px, #999)
+
+  .table--striped
+    tbody
+      tr:nth-child(even)
+        td
+          background-color: $color__grey--lite
+
+  .table--striped
+    th
+      background: $color__grey--dark
+      color: $color__white  

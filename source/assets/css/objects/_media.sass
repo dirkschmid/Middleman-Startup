@@ -1,0 +1,32 @@
+//////////////////////////
+$media__gutter: em($unit--gutter)
+$media__mobile-thumb: em(90)
+$media__mobile-end: 400
+//////////////////////////
+.media
+  @extend .cf
+  @extend %baseline
+
+.media__aside
+  float: left
+  margin-right: $media__gutter
+  +respond-max($media__mobile-end)
+    max-width: $media__mobile-thumb
+  +respond-min($media__mobile-end)
+    max-width: 30%    
+
+  .media--switch &
+    float: right
+    margin-left: $media__gutter
+    margin-right: 0  
+
+.media__body
+  overflow: hidden 
+  \:last-child
+    margin-bottom: 0
+  .media--overflow &
+    overflow: visible
+    display: table-cell
+    width: 10000px
+    *width: auto
+    *zoom: 1            

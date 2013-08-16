@@ -1,0 +1,102 @@
+input,
+textarea,
+select
+  box-sizing: border-box
+  width: 100%
+  border: 1px solid $color__grey
+  padding: em($unit)
+  color: $color__grey--dark
+  outline: 0 !important
+
+select
+  cursor: pointer
+
+label
+  cursor: pointer
+  display: block
+  padding-bottom: em($unit--half)
+  @extend .text--bold
+
+textarea
+  resize: vertical
+  min-height: em(100)
+
+legend
+  @extend .text--bold
+  background: $color__grey
+  padding: em($unit--half) em($unit)
+  .lt-ie8 &
+    margin-left: -7px
+
+fieldset
+  border: none
+  padding: 0
+  margin: 0
+
+form
+  margin: 0
+  ol, ul
+    padding-left: 0 !important
+    list-style: none !important
+    margin-left: 0
+  li
+    margin-bottom: em($unit * 1.5)  
+  br
+    display: none  
+
+input, button, .btn
+  line-height: normal
+
+input[type=search],
+input[type=submit]
+  -webkit-appearance: none
+  -webkit-border-radius: 0
+
+button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+input[type=file]
+  box-sizing: content-box
+  width: auto
+
+input[type=file]
+  border: none
+  padding: 0
+
+input[type=checkbox],
+input[type=radio]
+  vertical-align: baseline
+  background: none
+  border: none
+  height: em($unit--double)
+  width: em($unit--double)
+
+.checkbox
+  position: relative
+  padding-left: em($unit * 3)
+  label
+    padding-bottom: 0
+    font-weight: normal
+  input
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -(em($unit))
+
+.field-and-button
+  display: table
+  width: 100%
+
+.field-and-button__item
+  display: table-cell
+  width: 100%
+  vertical-align: top
+  button, .btn, input
+    height: em($unit * 5)
+  button, .btn
+    white-space: nowrap
+    +box-sizing(border-box)
+    line-height: normal
+    padding-top: 0
+    padding-bottom: 0

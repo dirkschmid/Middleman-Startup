@@ -1,0 +1,8 @@
+- if settings.use_jquery
+  = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+= javascript_include_tag 'scripts.js'
+
+- if content_for?(:javascripts)
+  = yield :javascripts

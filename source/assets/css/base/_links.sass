@@ -1,0 +1,15 @@
+a,
+.link
+  +link-colors($color__link, $color_-link--hover, $color__link--active, $color__link--visited, $color__link--focus)  
+  text-decoration: none
+  +on-interaction
+    border-bottom: 1px solid $color__grey--lite
+a
+  position: relative    
+  &:active
+    top: 1px  
+
+.link--img
+  display: block
+  +on-interaction
+    border: none

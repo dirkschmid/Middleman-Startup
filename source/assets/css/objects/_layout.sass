@@ -1,0 +1,33 @@
+//////////////////////////
+$layout__content-width: 65%
+$layout__sidebar: right
+$layout__sidebar-width: 30%
+//////////////////////////
+.layout
+  @extend .cf
+
+//.layout__content
+  +respond-min($bp__sidebar)
+    width: $layout__content-width
+    @if $layout__sidebar == right
+      float: left
+    @else if $layout__sidebar == left  
+      float: right
+    .layout--switch & 
+      @if $layout__sidebar == right
+        float: right
+      @else if $layout__sidebar == left  
+        float: left       
+
+.layout__sidebar
+  +respond-min($bp__sidebar)
+    width: $layout__sidebar-width
+    @if $layout__sidebar == right
+      float: right
+    @else if $layout__sidebar == left
+      float: left
+    .layout--switch & 
+      @if $layout__sidebar == right
+        float: left
+      @else if $layout__sidebar == left
+        float: right        

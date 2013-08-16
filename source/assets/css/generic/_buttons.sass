@@ -1,0 +1,27 @@
+.btn:link,
+.btn:visited,
+button,
+input[type=submit],
+input[type=button],
+input[type=reset]
+  line-height: normal
+  display: inline-block
+  border: none
+  padding: em($unit * 3) em($unit--double)
+  color: $color__text
+  +on-interaction
+    background-color: $color__grey--lite
+  &:active
+    position: relative
+    top: 1px 
+  + .btn
+    margin-left: em($unit * 1.5)
+
+.btn--primary
+  +on-interaction
+
+.btn--secondary
+  +on-interaction
+
+.btn--disabled
+  +on-interaction               

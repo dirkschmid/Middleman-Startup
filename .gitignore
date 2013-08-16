@@ -1,0 +1,17 @@
+# For projects using middleman (http://middlemanapp.com/)
+
+# Default output directory
+build
+
+
+# Bundler cache and config
+.bundle
+
+# Sass' cache
+.sass-cache
+
+# Mac
+.DS_Store
+
+# PC
+Thumbs.db

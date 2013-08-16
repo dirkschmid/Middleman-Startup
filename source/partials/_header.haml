@@ -1,0 +1,11 @@
+%header{ class: "header #{@class_footer.presence}", role: "banner" }
+  = link_to "index.html", class: "logo" do
+    = image_tag "logo.svg", class: "logo__img", alt: "Site logo"
+  %nav{ class: "navigation", role: "navigation" }
+    %ul.nav.nav--gapped.nav--primary
+      %li.nav--primary__item
+        = link_to "Home", "#"
+      %li.nav--primary__item
+        = link_to "About", "#"
+      %li.nav--primary__item
+        = link_to "Contact", "#"    

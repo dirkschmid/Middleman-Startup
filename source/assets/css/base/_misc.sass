@@ -1,0 +1,46 @@
+img, audio, canvas, embed, object, video 
+  display: block
+  max-width: 100%
+
+img  
+  font-style: italic
+  color: $color__grey
+  &[width]
+    width: auto !important
+  &[height]
+    height: auto !important
+  iframe[src*="maps.google"] &
+    max-width: auto
+    margin: auto
+
+iframe
+  display: block
+
+blockquote
+  color: $color__grey
+
+address
+  display: block
+  font-style: normal
+  margin-bottom: em($unit--baseline)
+  white-space: pre-line
+
+ins
+  background: #ff9
+  color: #000
+  text-decoration: none
+
+mark
+  font-style: italic
+  @extend .text--bold
+
+pre
+  overflow-x: auto
+
+hr,
+.hr
+  clear: both
+  border: none
+  +set-border(top)
+  margin-top: em($unit--baseline)
+  margin-bottom: em($unit--baseline)      

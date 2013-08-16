@@ -1,0 +1,23 @@
+%footer{ class: "footer #{@class_footer.presence}", role: "contentinfo" }
+  %ul.nav.nav--gapped.nav--tertiary
+    %li.nav--tertiary__item
+      = link_to "Sitemap", "#"
+    %li.nav--tertiary__item
+      = link_to "Privacy Policy", "#"
+    %li.nav--tertiary__item
+      = link_to "Contact", "#"
+  %ul.nav.nav--gapped.nav--social
+    %li.nav--social_item
+      = link_to "#" do
+        %i.icon.icon-twitter
+        Twitter
+    %li.nav--social__item
+      = link_to "#" do
+        %i.icon.icon-facebook
+        Facebook
+    %li.nav--social__item
+      = link_to "#" do
+        %i.icon.icon-gplus
+        Google+      
+  %small.credit
+    Copyright &copy; 2013. All rights reserved        

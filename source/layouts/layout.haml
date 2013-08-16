@@ -1,0 +1,20 @@
+!!! 5
+
+/[if lt IE 8] <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie" lang="en">
+/[if IE 8] <html class="no-js lt-ie10 lt-ie9 ie" lang="en">
+/[if IE 9] <html class="no-js lt-ie10 ie" lang="en">
+:plain
+  <!--[if gt IE 9]><!-->
+%html.no-js.modern-browser(lang="en")
+  :plain
+    <!--<![endif]-->
+  = partial 'partials/head'
+
+  %body{ class: @class_body.presence }  
+    .container
+      = partial 'partials/header'
+      %div{ class: @class_main.presence, role: "main" }
+        = yield
+      = partial 'partials/footer'
+
+= partial 'partials/scripts'

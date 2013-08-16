@@ -1,0 +1,103 @@
+body
+  font: normal #{$fonts__base}/#{$fonts__line-height} $fonts
+  color: $color__text
+  background-color: $color__background
+
+ol,
+ul
+  list-style: none
+  @extend %zero-pad
+
+h1, h2, h3, h4, h5, h6,
+pre, p, ul, ol, li, dl, dd, form, table, blockquote
+  @extend %zero
+  font-weight: normal
+  font-size: #{$fonts__base}
+
+blockquote, ul, ol, dl, fieldset  
+  > :last-child
+    @extend %zero--bottom  
+
+abbr[title]
+  border-bottom: none
+
+// Opt-in Typography
+.copy 
+  +respond-min($bp__text--tablet)
+    // 18px
+    font-size: 112.5%
+  +respond-min($bp__text--desktop)
+    // 20px
+    font-size: 125%
+  +respond-min($bp__text--widescreen)
+    // 22px
+    font-size: 137.5%
+
+  h1, h2, h3, h4, h5, h6, [class^="as-h"]
+    font-family: $fonts--comp
+    @extend .text--bold
+
+  h1, .as-h1
+    +font-size(40, 50)
+    margin-bottom: em(($unit--baseline/3))
+
+  h2, .as-h1
+    +font-size(30, 38)
+    margin-bottom: em(($unit--baseline/3))
+
+  h3, .as-h3
+    +font-size(24, 30)
+    margin-bottom: em(($unit--baseline/3))
+
+  h4, .as-h4
+    +font-size(20, 26)
+    margin-bottom: em(($unit--baseline/3))
+
+  h5, .as-h5
+    margin-bottom: em(($unit--baseline/3))
+
+  h6, .as-h6
+    color: $color__grey--dark
+    margin-bottom: em(($unit--baseline/3))
+
+
+  p, ul, ol, form, table, dl, blockquote, pre
+    @extend %baseline
+
+  ul
+    padding-left: em($unit--double)  
+    list-style: disc
+
+  ol
+    padding-left: em($unit * 2.5)
+    list-style: decimal  
+
+  li
+    margin-bottom: em($unit)
+
+  ul,
+  ol
+    ul,
+    ol
+      list-style: circle
+      margin-top: em($unit)
+      margin-bottom: em($unit--double)
+      padding-left: em($unit--double)      
+
+  blockquote
+    margin-top: em($unit--baseline)
+    padding: em($unit--baseline)
+
+  dt, th
+    @extend .text--bold
+
+.copy__micro
+  +respond-min($bp__text--tablet)
+    // 16px
+    font-size: 88.889%
+  +respond-min($bp__text--desktop)
+    // 16px
+    font-size: 80%
+  +respond-min($bp__text--widescreen)
+    // 16px
+    font-size: 72.727%  
