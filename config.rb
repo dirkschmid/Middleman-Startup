@@ -64,7 +64,7 @@ require 'sass-globbing'
 ###
 set :use_typekit, true
 
-set :use_jquery, false
+set :use_jquery, true
 
 set :css_dir, 'assets/css'
 
