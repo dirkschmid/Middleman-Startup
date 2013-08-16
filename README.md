@@ -8,7 +8,23 @@ Assuming you have [RVM](https://rvm.io/) and [Bundler](http://bundler.io/) alrea
     $ bundle
     $ middleman s
 
-This runs a web server, preview your project at [http://localhost:4567](http://localhost:4567)
+This runs a web server. Makes changes and then preview your project at [http://localhost:4567](http://localhost:4567). Auto/live-reload is activated by default, so no refreshing needed!
+
+- This framework uses **2 spaces for code indenting, no tabs**
+- It also uses [HAML](http://haml.info/) for templating
+- JS libraries included are [Modernizr](http://modernizr.com/), [Tire JS](http://tirejs.com/), [Underscore](http://underscorejs.org/)
+- A basic [Fontello](http://fontello.com/) font and styles are included
+
+Custom settings added for this framework in `config.rb` are...
+
+    set :use_typekit, true
+    set :use_jquery, false
+
+...use Typekit or jQuery respectively. If you choose not to use jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors with minimum overhead.
+
+======================================
+
+## Finished?
 
 To build your project, run
 
@@ -17,13 +33,6 @@ To build your project, run
 Which compiles your templates into the `build` directory using the settings in `config.rb`. The build directory is ignored in `.gitignore`.   
 
 All assets minifed by default. For a different build config, please see the [Middleman](http://middlemanapp.com/) documentation.
-
-Custom settings added by this framework in `config.rb` are...
-
-    set :use_typekit, true
-    set :use_jquery, false
-
-...use Typekit or jQuery respectively. If not using jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors.
 
 ======================================
 
