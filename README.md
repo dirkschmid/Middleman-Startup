@@ -18,9 +18,9 @@ This runs a web server. Makes changes and then preview your project at [http://l
 Custom settings added for this framework in `config.rb` are...
 
     set :use_typekit, true
-    set :use_jquery, false
+    set :use_jquery, true
 
-...use Typekit or jQuery respectively. If you choose not to use jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors with minimum overhead.
+...use Typekit and jQuery respectively. If you choose not to use jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors with minimum overhead.
 
 ======================================
 
