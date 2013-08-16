@@ -25,6 +25,8 @@ Custom settings added in `config.rb` are:
 
 To use Typekit and jQuery respectively. If not using jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors.
 
+======================================
+
 ### CSS Architecture
 
 - All site assets (css, javascript, images, fonts) lie within the `/assets` folder
