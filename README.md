@@ -16,14 +16,14 @@ To build your project, run
 
 Which compiles your templates into the `build` directory using the settings in `config.rb`. The build directory is ignored in `.gitignore`.   
 
-For build config, please see the [Middleman](http://middlemanapp.com/) documentation.
+All assets minifed by default. For a different build config, please see the [Middleman](http://middlemanapp.com/) documentation.
 
-Custom settings added in `config.rb` are:
+Custom settings added by this framework in `config.rb` are...
 
     set :use_typekit, true
     set :use_jquery, false
 
-To use Typekit and jQuery respectively. If not using jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors.
+...use Typekit or jQuery respectively. If not using jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors.
 
 ======================================
 
