@@ -1,6 +1,20 @@
 Middleman Startup
 =========
 
+### Getting started
+
+Assuming you have [RVM](https://rvm.io/) and [Bundler](http://bundler.io/) already installed, `cd` into the project directory and run
+
+    $ bundle
+    $ middleman s
+
+This runs a web server on http://localhost:4567
+
+To build your project, run
+
+    $ middleman build
+
+Which compiles your templates into the `build` directory (ignored in `.gitignore`)    
 
 ### CSS Architecture
 
