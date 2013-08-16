@@ -8,13 +8,22 @@ Assuming you have [RVM](https://rvm.io/) and [Bundler](http://bundler.io/) alrea
     $ bundle
     $ middleman s
 
-This runs a web server on http://localhost:4567
+This runs a web server, preview your project at [http://localhost:4567](http://localhost:4567)
 
 To build your project, run
 
     $ middleman build
 
-Which compiles your templates into the `build` directory (ignored in `.gitignore`)    
+Which compiles your templates into the `build` directory using the settings in `config.rb`. The build directory is ignored in `.gitignore`.   
+
+For build config, please see the [Middleman](http://middlemanapp.com/) documentation.
+
+Custom settings added in `config.rb` are:
+
+    set :use_typekit, true
+    set :use_jquery, false
+
+To use Typekit and jQuery respectively. If not using jQuery, [Tire JS](http://tirejs.com/) is included for easy DOM selectors.
 
 ### CSS Architecture
 
