@@ -3,17 +3,18 @@ Middleman Startup
 
 ## Getting started
 
-Assuming you have [RVM](https://rvm.io/) and [Bundler](http://bundler.io/) already installed, `cd` into the project directory and run
+Assuming you have [RVM](https://rvm.io/) and [Bundler](http://bundler.io/) already installed, `cd` into the project directory and run:
 
     $ bundle
     $ middleman s
 
-This runs a web server. Makes changes and then preview your project at [http://localhost:4567](http://localhost:4567). Auto/live-reload is activated by default, so no refreshing needed!
+This runs a web server. Makes changes and then preview your project at [http://localhost:4567](http://localhost:4567). 
 
 - This framework uses **2 spaces for code indenting, no tabs**
 - It also uses [HAML](http://haml.info/) for templating
 - JS libraries included are [Modernizr](http://modernizr.com/), [Tire JS](http://tirejs.com/), [Underscore](http://underscorejs.org/)
 - A basic [Fontello](http://fontello.com/) font and styles are included
+- Auto/live-reload is activated by default, so no page refreshing needed!
 
 Custom settings added for this framework in `config.rb` are...
 
